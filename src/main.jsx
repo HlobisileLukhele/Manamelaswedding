@@ -4,6 +4,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home.jsx';
 import Story from './pages/Story.jsx';
+import Accommodation from './pages/Accommodation.jsx';
+import Schedule from './pages/Schedule.jsx';
+import Gallery from './pages/Gallery.jsx';
+import Registry from './pages/Registry.jsx';
+
 import Navbar from './components/Navbar.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -19,6 +24,22 @@ const router = createBrowserRouter([
       {
         path: 'story',
         element: <Story />,
+      },
+      {
+        path: 'accomodation',
+        element: <Accommodation />,
+      },
+      {
+        path: 'schedule',
+        element: <Schedule />,
+      },
+      {
+        path: 'Gallery',
+        element: <Gallery />,
+      },
+      {
+        path: 'Registry',
+        element: <Registry />,
       },
     ],
   },
